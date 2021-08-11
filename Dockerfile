@@ -26,7 +26,7 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
 #Packages
-RUN apt-get update
+RUN sudo apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
 RUN sudo apt-get install wget
 RUN sudo apt-get install speedtest-cli
