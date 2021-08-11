@@ -27,7 +27,7 @@ RUN sudo apt-get install -y nodejs
 
 #Packages
 RUN sudo apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends apt-utils
+RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends apt-utils
 RUN sudo apt-get install wget
 RUN sudo apt-get install speedtest-cli
 RUN sudo apt-get install neofetch
