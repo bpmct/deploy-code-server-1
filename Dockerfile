@@ -26,7 +26,6 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
 #Packages
-RUN sudo apt update
 RUN sudo apt-get install wget
 RUN sudo apt-get install speedtest-cli
 RUN sudo apt-get install neofetch
