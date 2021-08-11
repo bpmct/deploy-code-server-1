@@ -26,10 +26,10 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 
 #Packages
-RUN sudo apt-get install apt-utils
-RUN sudo apt-get install wget
-RUN sudo apt-get install speedtest-cli
-RUN sudo apt-get install neofetch
+RUN sudo apt-get install apt-utils -y
+RUN sudo apt-get install wget -y
+RUN sudo apt-get install speedtest-cli -y
+RUN sudo apt-get install neofetch -y
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
