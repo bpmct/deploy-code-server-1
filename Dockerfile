@@ -47,6 +47,10 @@ RUN code-server --install-extension PKief.material-icon-theme
 
 # Port
 ENV PORT=8080
+ENV RCLONE_DATA=TRUE
+ENV RCLONE_SOURCE=/home/coder/project/downloads
+ENV RCLONE_DESTINATION=code-server-files
+ENV RCLONE_VSCODE_TASKS=true
 
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
